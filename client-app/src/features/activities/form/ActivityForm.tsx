@@ -6,9 +6,10 @@ interface Props {
     activity: Activity | undefined
     closeForm: () => void
     createOrEdit: (activity: Activity) => void
+    submitting: boolean
 }
 
-export default function ActivityForm({activity: selectedActivity, closeForm, createOrEdit}: Props) {
+export default function ActivityForm({activity: selectedActivity, closeForm, createOrEdit, submitting}: Props) {
 
     const initialState = selectedActivity ?? {
         id: '',
@@ -40,13 +41,13 @@ export default function ActivityForm({activity: selectedActivity, closeForm, cre
                                onChange={handleInputChange}></Form.TextArea>
                 <FormInput placeholder='Category' value={activity.category} name='category'
                            onChange={handleInputChange}></FormInput>
-                <FormInput placeholder='Date' value={activity.date} name='date'
+                <FormInput type='date' placeholder='Date' value={activity.date} name='date'
                            onChange={handleInputChange}></FormInput>
                 <FormInput placeholder='City' value={activity.city} name='city'
                            onChange={handleInputChange}></FormInput>
                 <FormInput placeholder='Venue' value={activity.venue} name='venue'
                            onChange={handleInputChange}></FormInput>
-                <Button floated='right' positive type='submit' content='Submit'></Button>
+                <Button loading={submitting} floated='right' positive type='submit' content='Submit'></Button>
                 <Button onClick={closeForm} floated='right' type='button' content='Cancel'></Button>
             </Form>
         </Segment>
