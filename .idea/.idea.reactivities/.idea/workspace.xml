@@ -9,7 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2599b7f-bfe4-43ef-9a2a-07dda4ee986c" name="Changes" comment="" />
+    <list default="true" id="d2599b7f-bfe4-43ef-9a2a-07dda4ee986c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client-app/src/app/stores/activityStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-app/src/app/stores/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-app/src/app/layout/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-app/src/app/layout/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-app/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-app/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-app/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-app/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -45,6 +52,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
     &quot;ts.external.directory.path&quot;: &quot;E:\\Rider\\JetBrains Rider 2022.2.4\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -107,7 +115,11 @@
       <workItem from="1691155817025" duration="9276000" />
       <workItem from="1691213223797" duration="252000" />
       <workItem from="1691223698231" duration="5768000" />
-      <workItem from="1691301146737" duration="8858000" />
+      <workItem from="1691301146737" duration="10182000" />
+      <workItem from="1691388749884" duration="321000" />
+      <workItem from="1691389128325" duration="92000" />
+      <workItem from="1691940638528" duration="5725000" />
+      <workItem from="1692006011471" duration="3726000" />
     </task>
     <task id="LOCAL-00001" summary="add CQRS pattern with crud operations">
       <created>1691164836450</created>
@@ -116,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691164836450</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add axios config and loading-component">
+      <created>1691946220134</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691946220134</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +148,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -138,6 +169,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="add CQRS pattern with crud operations" />
-    <option name="LAST_COMMIT_MESSAGE" value="add CQRS pattern with crud operations" />
+    <MESSAGE value="add axios config and loading-component" />
+    <option name="LAST_COMMIT_MESSAGE" value="add axios config and loading-component" />
   </component>
 </project>
