@@ -5,8 +5,10 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <Fragment>
+      {/* @ts-ignore */}
       <Menu inverted fixed="top">
         <Container>
+          {/* @ts-ignore */}
           <MenuItem exact as={NavLink} to="/" header>
             <img
               src="./assets/logo.png"
@@ -15,8 +17,11 @@ export default function Navbar() {
             />
             Reactivities
           </MenuItem>
+          {/* @ts-ignore */}
           <MenuItem as={NavLink} to="/activities" name="Activities"></MenuItem>
+          {/* @ts-ignore */}
           <MenuItem>
+          {/* @ts-ignore */}
             <Button
               as={NavLink}
               to="/createActivity"

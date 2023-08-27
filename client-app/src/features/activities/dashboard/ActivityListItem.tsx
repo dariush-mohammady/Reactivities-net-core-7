@@ -13,6 +13,7 @@ export default function ActivityListItem({ activity }: Props) {
         <Item.Group>
           <Item>
             <Item.Image size="tiny" circular src="/assets/user.png" />
+            {/* @ts-ignore */}
             <Item.Content>
               <Item.Header as={Link} to={`/activities/${activity.id}`}>
                 {activity.title}
@@ -24,13 +25,16 @@ export default function ActivityListItem({ activity }: Props) {
       </Segment>
       <Segment>
         <span>
+          {/* @ts-ignore */}
           <Icon name="clock" /> {activity.date}
+          {/* @ts-ignore */}
           <Icon name="marker" /> {activity.venue}
         </span>
       </Segment>
       <Segment secondary>Attendees go here</Segment>
       <Segment clearing>
         <span>{activity.description}</span>
+        {/* @ts-ignore */}
         <Button
           as={Link}
           to={`/activities/${activity.id}`}

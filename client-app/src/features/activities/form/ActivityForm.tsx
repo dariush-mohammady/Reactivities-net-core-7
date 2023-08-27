@@ -92,6 +92,7 @@ export default observer(function ActivityForm() {
           name="venue"
           onChange={handleInputChange}
         ></FormInput>
+        {/* @ts-ignore */}
         <Button
           loading={loading}
           floated="right"
@@ -99,6 +100,7 @@ export default observer(function ActivityForm() {
           type="submit"
           content="Submit"
         ></Button>
+        {/* @ts-ignore */}
         <Button
           as={Link}
           to="/activities"

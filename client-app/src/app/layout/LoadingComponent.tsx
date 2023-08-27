@@ -12,6 +12,7 @@ export default function LoadingComponent({
 }: Props) {
   return (
     <Fragment>
+      {/* @ts-ignore */}
       <Dimmer active={true} inverted={inverted}>
         <Loader content={content}></Loader>
       </Dimmer>

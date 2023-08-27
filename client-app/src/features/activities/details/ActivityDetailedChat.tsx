@@ -25,6 +25,7 @@ export default observer(function ActivityDetailedChat() {
               </Comment.Metadata>
               <Comment.Text>How artistic!</Comment.Text>
               <Comment.Actions>
+                {/* @ts-ignore */}
                 <Comment.Action>Reply</Comment.Action>
               </Comment.Actions>
             </Comment.Content>
@@ -39,6 +40,7 @@ export default observer(function ActivityDetailedChat() {
               </Comment.Metadata>
               <Comment.Text>Dude, this is awesome. Thanks so much</Comment.Text>
               <Comment.Actions>
+                {/* @ts-ignore */}
                 <Comment.Action>Reply</Comment.Action>
               </Comment.Actions>
             </Comment.Content>
@@ -46,6 +48,7 @@ export default observer(function ActivityDetailedChat() {
 
           <Form reply>
             <Form.TextArea />
+            {/* @ts-ignore */}
             <Button
               content="Add Reply"
               labelPosition="left"

@@ -32,6 +32,7 @@ export default observer(function ActivityDetailedHeader({ activity }: Props) {
         <Segment style={activityImageTextStyle} basic>
           <Item.Group>
             <Item>
+              {/* @ts-ignore */}
               <Item.Content>
                 <Header
                   size="huge"
@@ -48,8 +49,11 @@ export default observer(function ActivityDetailedHeader({ activity }: Props) {
         </Segment>
       </Segment>
       <Segment clearing attached="bottom">
+        {/* @ts-ignore */}
         <Button color="teal">Join Activity</Button>
+        {/* @ts-ignore */}
         <Button>Cancel attendance</Button>
+        {/* @ts-ignore */}
         <Button color="orange" floated="right">
           Manage Event
         </Button>

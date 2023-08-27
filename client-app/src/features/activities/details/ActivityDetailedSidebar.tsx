@@ -19,6 +19,7 @@ export default observer(function ActivityDetailedSidebar() {
       <Segment attached>
         <List relaxed divided>
           <Item style={{ position: "relative" }}>
+            {/* @ts-ignore */}
             <Label
               style={{ position: "absolute" }}
               color="orange"
@@ -27,6 +28,7 @@ export default observer(function ActivityDetailedSidebar() {
               Host
             </Label>
             <Image size="tiny" src={"/assets/user.png"} />
+            {/* @ts-ignore */}
             <Item.Content verticalAlign="middle">
               <Item.Header as="h3">
                 <Link to={`#`}>Bob</Link>
@@ -37,6 +39,7 @@ export default observer(function ActivityDetailedSidebar() {
 
           <Item style={{ position: "relative" }}>
             <Image size="tiny" src={"/assets/user.png"} />
+            {/* @ts-ignore */}
             <Item.Content verticalAlign="middle">
               <Item.Header as="h3">
                 <Link to={`#`}>Tom</Link>
@@ -47,6 +50,7 @@ export default observer(function ActivityDetailedSidebar() {
 
           <Item style={{ position: "relative" }}>
             <Image size="tiny" src={"/assets/user.png"} />
+            {/* @ts-ignore */}
             <Item.Content verticalAlign="middle">
               <Item.Header as="h3">
                 <Link to={`#`}>Sally</Link>
