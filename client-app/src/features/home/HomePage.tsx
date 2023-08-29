@@ -1,6 +1,13 @@
 import { Container, Header, Segment, Image, Button } from "semantic-ui-react";
+import { useStore } from "../../app/stores/store";
+import { observer } from "mobx-react-lite";
+import { Fragment } from "react";
+import LoginForm from "../users/LoginForm";
+import RegisterForm from "../users/RegisterForm";
 
-export default function HomePage() {
+export default observer(function HomePage() {
+  const { userStore, modalStore } = useStore();
+
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <Container text>
@@ -13,12 +20,36 @@ export default function HomePage() {
           />
           Reactivities
         </Header>
-        <Header as="h2" inverted content="Welcome To Reactivites" />
-        {/* @ts-ignore */}
-        <Button as="link" to="/activities" size="huge" inverted>
-          Take me to the Activities!
-        </Button>
+        {userStore.isLoggedIn ? (
+          // @ts-ignore
+          <Fragment>
+            <Header as="h2" inverted content="Welcome To Reactivites" />
+            {/* @ts-ignore */}
+            <Button as="link" to="/activities" size="huge" inverted>
+              Go To Activities!
+            </Button>
+          </Fragment>
+        ) : (
+          <>
+            {/* @ts-ignore */}
+            <Button
+              onClick={() => modalStore.openModal(<LoginForm />)}
+              size="huge"
+              inverted
+            >
+              Login
+            </Button>
+            {/* @ts-ignore */}
+            <Button
+              onClick={() => modalStore.openModal(<RegisterForm />)}
+              size="huge"
+              inverted
+            >
+              Register
+            </Button>
+          </>
+        )}
       </Container>
     </Segment>
   );
-}
+});
