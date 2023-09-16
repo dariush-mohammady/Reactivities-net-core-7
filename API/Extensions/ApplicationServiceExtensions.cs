@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Persistence;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Application.Interfaces;
+using Infrastructure.Security;
 
 namespace API.Extensions;
 
@@ -29,6 +31,8 @@ public static class ApplicationServiceExtensions
 
         services.AddMediatR(typeof(List.Handler));
         services.AddAutoMapper(typeof(MappingProfiles).Assembly);
+        services.AddHttpContextAccessor();
+        services.AddScoped<IUserAccessor, UserAccessor>();
         services.AddFluentValidationAutoValidation();
         services.AddValidatorsFromAssemblyContaining<Create>();
 
